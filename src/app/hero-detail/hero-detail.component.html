@@ -1,0 +1,14 @@
+<div *ngIf="hero; then heroDatail else noHeroSelected"></div>
+<ng-template #heroDatail>
+  <h2>{{hero.name}} details!</h2>
+  <div><label>Id: </label>{{hero.id}}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </div>
+</ng-template>
+<ng-template #noHeroSelected>
+  <div>
+    No hero selected!
+  </div>
+</ng-template>
