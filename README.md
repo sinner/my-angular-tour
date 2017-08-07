@@ -1,3 +1,7 @@
+# My Angular Tour
+
+Angular Tour Tutorial (Angular 2/4)
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
