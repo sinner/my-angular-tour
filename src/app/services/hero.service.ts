@@ -24,4 +24,10 @@ export class HeroService {
     });
   }
 
+  getHero(id: number): Promise<Hero> {
+    return this.getHeroesSlowly().then(
+      heroes => heroes.find(hero => hero.id === id)
+    );
+  }
+
 }

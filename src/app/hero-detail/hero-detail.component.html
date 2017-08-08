@@ -6,9 +6,13 @@
     <label>Name: </label>
     <input [(ngModel)]="hero.name" placeholder="name"/>
   </div>
+  <button (click)="goBack()">Back</button>
 </ng-template>
 <ng-template #noHeroSelected>
-  <div>
-    No hero selected!
-  </div>
+  <h2 *ngIf="undefined===hero">
+    Loading...
+  </h2>
+  <h2 *ngIf="null===hero">
+    No hero found!
+  </h2>
 </ng-template>
