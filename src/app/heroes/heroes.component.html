@@ -1,6 +1,14 @@
 <!--The whole content below can be removed with the new code.-->
 
 <h2>My Heroes</h2>
+
+<div class="add-hero-area">
+  <label>Hero name:</label> <input #heroName />
+  <button (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div>
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
       (click)="onSelect(hero)"
@@ -9,7 +17,7 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero">
+<div class="heroe-view" *ngIf="selectedHero">
   <h2>
     {{selectedHero.name | uppercase}} is my hero
   </h2>
