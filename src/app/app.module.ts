@@ -17,6 +17,7 @@ import { HeroesComponent } from "./heroes/heroes.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { HeroService } from "./services/hero.service";
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HeroService } from "./services/hero.service";
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   providers: [
     SlimLoadingBarService,
